@@ -92,9 +92,15 @@ h1 {
 
 /* small tablet styles */
 @media screen and (min-width: 769px) {
+  body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
   section {
     grid-template-columns: repeat(6, 1fr);
-    gap: 0;
+    gap: 1rem;
+    max-width: 1200px;
   }
   .intro {
     grid-column: span 3;
@@ -135,7 +141,7 @@ h1 {
     gap: 1rem;
   }
   .testimonial {
-    height: 200px;
+    max-height: 300px;
     padding: 30px;
   }
   .testimonial:nth-child(2) {
@@ -150,5 +156,13 @@ h1 {
     font-size: 1.2rem;
     text-align: left;
     line-height: 1.3rem;
+  }
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  .testimonial {
+    height: 250px;
+    padding: 30px;
   }
 }

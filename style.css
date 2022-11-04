@@ -161,6 +161,28 @@ h1 {
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
+  .intro {
+    margin-bottom: 50px;
+  }
+  h1 {
+    padding-right: 200px;
+  }
+
+  .lead {
+    padding-right: 200px;
+  }
+  .reports {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .report:nth-child(2) {
+    margin-left: 60px;
+  }
+  .report:nth-child(3) {
+    margin-left: 100px;
+  }
+
   .testimonial {
     height: 250px;
     padding: 30px;
